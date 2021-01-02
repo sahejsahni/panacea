@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Certifications Master">
+  <title>{{ title }}</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+  <script src="https://use.fontawesome.com/a977c2ee2c.js"></script>
+  <link rel="stylesheet" href="/assets/css/libraries.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>{{ styleInput }}</style>
+</head>
+
+<body>
+  <div class="wrapper"> 
+    <div class="preloader">
+      <div class="loading">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div><!-- /.preloader -->
+
+      <!-- =========================
+        Header 
+    =========================== -->
+    <header class="header header-transparent">
+      <div class="topbar d-none d-lg-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex align-items-center justify-content-between">
+                <ul class="topbar__contact d-flex flex-wrap list-unstyled mb-0">
+                  <li>
+                    <i class="icon-phone"></i><a href="tel:+91 9311619773">+91 9311619773</a>
+                  </li>
+                  <li>
+                    <i class="icon-envelope"></i><a href="mailto:info@certificationsmaster.com">info@certificationsmaster.com</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                  <ul class="social-icons list-unstyled mb-0">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container">
+          <button type="button" class="action__btn action__btn-burgerMenu mr-30 d-none d-lg-block">
+            <i class="icon-nav"></i>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="/assets/images/logo/CF logo light.svg" class="logo-light logo" alt="logo">
+            <img src="/assets/images/logo/CF logo dark.svg" class="logo-dark logo" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav__item">
+                <a href="/" class="nav__item-link">Home</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="/cert-cisa/" class="nav__item-link">Industries</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item  has-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Services</a>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <a href="coming-soon.html" class="nav__item-link">Coming Soon</a>
+                  </li><!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="404.html" class="nav__item-link">404 Page</a>
+                  </li><!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="#" class="nav__item-link  open-register-popup">Register</a>
+                  </li><!-- /.nav-item -->
+                </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="../contact/" class="nav__item-link">Contact Us</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+            <div class="d-md-block d-lg-none pl-20">
+              <ul class="topbar__contact list-unstyled mt-20 mb-0">
+                <li>
+                  <i class="icon-phone pl-10"></i><a href="tel:+91 9311619773"> +91 9311619773</a>
+                </li>
+                <li>
+                  <i class="icon-envelope"></i><a href="mailto:info@certificationsmaster.com"> info@certificationsmaster.com</a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /.navbar-collapse -->
+          <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
+            
+            <li class="d-none d-xl-block">
+              <a href="#contact-form" class="btn btn__primary btn__primary-style2 btn_ action__btn-contact">Request
+                A Quote</a>
+            </li>
+          </ul><!-- /.navbar-actions -->
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
+  </div>
+
+  <!-- base top ends -->
+
+    {% block content %}
+      {{ content | safe }}
+    {% endblock content%}
+
+
+
+  <!-- base bottom begins -->
+
+
+  <div class="wrapper">
+  <!-- =========================
+        Contact layout 2
+      =========================== -->
+      <div  id="contact-form" style="height: 4px;"></div>
+      <section class="contact-layout2 pt-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="contact-panel d-flex flex-wrap mt--170">
+                <div
+                  class="contact-panel__banner bg-overlay bg-overlay-primary d-flex flex-column justify-content-between">
+                  <div class="bg-img"><img src="../assets/images/contact.jpg" alt="background"></div>
+                  <div class="heading heading-layout2 heading-light">
+                    <h3 class="heading__title mb-30">Perfect Solutions For Your Business!</h3>
+                    <p class="heading__desc mb-30">Mintech has been helping organizations throughout the World to manage
+                      their
+                      IT with our unique approach to technology management and consultancy solutions. </p>
+                    <ul class="list-items list-items-light list-unstyled mb-40">
+                      <li>Provided by experts to help challenge activities</li>
+                      <li>Complemented with peer perspectives and advice</li>
+                      <li>More than 450,000 client’s interactions </li>
+                    </ul>
+                  </div><!-- /.heading -->
+                  <div class="d-flex flex-wrap">
+                    <p class="text-white">In a hurry? Let's chat!</p>
+                    <a href="industries.html" class="btn btn__white btn__bordered btn__icon">
+                      <span>Contact us on Whatsapp</span><span style="font-size: 1.4em; margin-left: 8px;"><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+                    </a>
+                  </div>
+                </div><!-- /.contact-panel__banner -->
+                <form class="contact-panel__form" method="post" action="assets/php/contact.php" data-netlify-recaptcha="true" id="contactForm" netlify>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="contact-name">Name (required)</label>
+                        <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                          required>
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="contact-email">Email (required)</label>
+                        <input type="email" class="form-control" placeholder="Email" id="contact-email"
+                          name="contact-email" required>
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="contact-Phone">Inquiry (required)</label>
+                        <select class="form-control">
+                          <option value="0">IT Management Services</option>
+                          <option value="1">IT Management Services 2</option>
+                          <option value="2">IT Management Services 3</option>
+                        </select>
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="contact-Phone">Phone (Optional)</label>
+                        <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
+                          name="contact-phone">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="form-group">
+                        <label for="contact-message">Additional Details (optional)</label>
+                        <textarea class="form-control" placeholder="Describe your inquirey!" id="contact-message"
+                          name="contact-message"></textarea>
+                      </div>
+                    <div class="col-sm-12">
+                      <div class="row">
+                        <div data-netlify-recaptcha="true" class="mb-20"></div>
+                    </div>  
+                    </div><!-- /.col-lg-6 -->
+                    <button type="submit" class="btn btn__secondary btn__xl btn__block">Submit Request </button>
+                        <div class="contact-result"></div>
+                  </div><!-- /.row -->
+                </form><!-- /.contact-panel__form -->
+              </div><!-- /.contact-panel -->
+            </div><!-- /.col-lg-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </section><!-- /.Contact layout 2 -->
+    <!-- ========================
+      Footer
+    ========================== -->
+    <footer class="footer bg-heading">
+      <div class="bg-img"><img src="/assets/images/backgrounds/footer-bg.svg" alt="backgrounds"></div>
+      <div class="footer-contact pt-50 pb-50">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-lg-4 col-xl-2">
+              <div class="contact-info">
+                <h6 class="footer-widget__title">Quick Contact</h6>
+                <ul class="contact-list list-unstyled mb-0">
+                  <li><a href="tel:+91 9311619773">+91 9311619773</a></li>
+                  <li><a href="mailto:info@certificationsmaster.com">info@certificationsmaster.com</a></li>
+                </ul>
+              </div><!-- /.contact-info -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-4 col-lg-4 col-xl-2">
+              <div class="contact-info">
+                <h6 class="footer-widget__title">Our Address</h6>
+                <ul class="contact-list list-unstyled mb-0">
+                  <li>2307 Beverley Rd,<br> New York 11226 U.S.</li>
+                </ul>
+              </div><!-- /.contact-info -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-4 col-lg-4 col-xl-2">
+              <div class="contact-info">
+                <h6 class="footer-widget__title">Opening Hours</h6>
+                <ul class="contact-list list-unstyled mb-0">
+                  <li>Mon - Fri: 8am - 7pm</li>
+                  <li>Sat - Sun: 9 am - 8pm</li>
+                </ul>
+              </div><!-- /.contact-info -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-12 col-md-12 col-xl-4 offset-xl-2">
+              <h6 class="footer-widget__title">Contact us on Whatsapp</h6>
+              <div class="d-flex flex-wrap">
+                <a href="#" class="btn btn__primary btn__secondary-style2 " >Contact us on Whatsapp <span style="font-size: 1.4em; margin-left: 8px;"><i class="fa fa-whatsapp" aria-hidden="true"></i></span></a>
+              </div>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-contact -->
+      <div class="footer-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 footer-widget footer-widget-about">
+              <div class="footer-widget__content">
+                <img src="/assets/images/logo/CF logo light.svg" alt="logo" class="mb-30">
+                <p class="color-gray mb-40">We are experienced professionals who understand that It services is
+                  changing, and are
+                  true partners who care about your future business success.</p>
+                <ul class="social-icons list-unstyled mb-0">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+                </ul><!-- /.social-icons -->
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-xl-2 -->
+            <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">
+              <h6 class="footer-widget__title">Company</h6>
+              <div class="footer-widget__content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="leadership-team.html">Meet Our Team</a></li>
+                    <li><a href="blog.html">News & Media</a></li>
+                    <li><a href="projects-grid.html">Case Studies</a></li>
+                    <li><a href="contacs.html">Contacts</a></li>
+                    <li><a href="#">Investors</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">
+              <h6 class="footer-widget__title">Solutions</h6>
+              <div class="footer-widget__content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">IT Management</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                    <li><a href="#">Cloud Computing</a></li>
+                    <li><a href="#">IT Consulting</a></li>
+                    <li><a href="#">Software Dev</a></li>
+                    <li><a href="#">IT Support</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">
+              <h6 class="footer-widget__title">Resources</h6>
+              <div class="footer-widget__content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="pricing.html">Pricing and plans</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="faqs.html">Help & FAQ</a></li>
+                    <li><a href="contacs.html">Contact Us</a></li>
+                    <li><a href="#">Site map</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav">
+              <h6 class="footer-widget__title">We're Hiring</h6>
+              <div class="footer-widget__content">
+                <p class="fz-14 color-white">Interested in joining the Certifications Master team?</p>
+                <a href="careers.html" class="btn btn__primary btn__primary-style2 btn__link">
+                  <span>Our Careers</span><i class="icon-arrow-right icon-outlined"></i>
+                </a>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-primary -->
+      <div class="footer-secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+              <h6><span class="fz-14 font-weight-normal">&copy; 2020 Certifications Master, All Rights Reserved. Crafted with precision at</span>
+              <a class="fz-14 color-primary text-lowercase" href="http://themeforest.net/user/gmail">madebysahej.com</a></h6>
+            </div><!-- /.col-lg-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-secondary -->
+    </footer><!-- /.Footer -->
+    
+    <div class="burger-menu">
+      <div class="burger-menu__content">
+        <button type="button" class="burger-menu__close"><i class="fas fa-times"></i></button>
+        <div class="burger-menu__header">
+          <img src="/assets/images/logo/CF logo light.svg" alt="logo" class="mb-30">
+          <p class="color-white">We are experienced professionals who understand that It services is changing, and are
+            true partners who care about your future business success.</p>
+        </div><!-- /.burger-menu__header -->
+        <div class="contact-blocks-wrapper">
+          <div class="contact-block contact-block-light">
+            <h5 class="contact-block__title">Our Location</h5>
+            <ul class="contact-block__list list-unstyled">
+              <li>2307 Beverley Rd Brooklyn, New York 11226 United States.</li>
+            </ul>
+          </div><!-- /.contact-panel__info__block -->
+          <div class="contact-block contact-block-light">
+            <h5 class="contact-block__title">Quick Contact</h5>
+            <ul class="contact-block__list list-unstyled">
+              <li><a href="mailto:Certifications Master@gmail.com"></a>Email: Certifications Master@gmail.com</li>
+              <li><a href="mailto:Certifications Master@gmail.com"></a>Support: Certifications Master@gmail.com</li>
+            </ul>
+          </div><!-- /.contact-panel__info__block -->
+          <div class="contact-block contact-block-light">
+            <h5 class="contact-block__title">Opening Hours</h5>
+            <ul class="contact-block__list list-unstyled">
+              <li>Monday - Friday</li>
+              <li>8 am to 7 pm</li>
+            </ul>
+          </div><!-- /.contact-panel__info__block -->
+          <ul class="social-icons list-unstyled mb-0 mt-20">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+          </ul><!-- /.social-icons -->
+        </div><!-- /.contact-blocks-wrapper -->
+      </div><!-- /.burger-menu__content -->
+    </div><!-- /.burger-menu -->
+    <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
+  </div><!-- /.wrapper -->
+
+  <script src="/assets/js/jquery-3.5.1.min.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

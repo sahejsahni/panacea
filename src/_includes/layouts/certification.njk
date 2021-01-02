@@ -1,0 +1,145 @@
+{% extends "base.njk" %}
+
+{% block content %}
+
+     <div class="wrapper wrapper-negative">
+        <div class="preloader">
+            <div class="loading">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div><!-- /.preloader -->
+
+        <!-- ========================
+        page title 
+        =========================== -->
+        <section class="page-title page-title-layout14 text-center py-0">
+            <div class="container-fluid">
+                <div class="row align-items-center bg-pattern">
+                <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 pt-120">
+                    <h2 class="heading__subtitle"> Certification Training Course</h2>
+                    <h2 class="text-white font-weight-bold mb-50">{{ cert.title | safe }}</h2>
+                    <p class="pagetitle__desc">{{ cert.subtext | safe }}</p>
+                </div><!-- /.col-xl-8 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.page-title -->
+        
+        <!-- Secondary Nav -->
+
+        <section class="secondary-nav secondary-nav-internal-navigation sticky-top py-0 secondary-nav-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="nav nav-tabs justify-content-center">
+              <a href="#" data-scroll="overview" class="nav__link">Overview</a>
+              <a href="#" data-scroll="takeaways" class="nav__link">Takeaways</a>
+              <a href="#" data-scroll="agenda" class="nav__link">Course Agenda</a>
+              <a href="#" data-scroll="contact-form" class="nav__link">Enroll</a>
+            </nav>
+          </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>  
+
+        <!-- ======================
+        Text Content
+        ========================= -->
+        <section class="text-content pt-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 offset-lg-1 col-lg-5 d-none d-lg-block" id="overview">
+                        <div class="portfolio-item__img ">
+                            <img src="../assets/images/logo/{{ cert.logo }}" class="rounded" alt="portfolio img">
+                        </div><!-- /.portfolio-img -->
+                    </div>
+                    <div class="col-md-12 col-lg-5">
+                        <h5>Overview</h5>
+                        <div class="text__block">
+                        <div class="text__block-content row">
+                            <div class="col-sm-12">
+                            <p class="text__block-desc"> {{ cert.overview | safe }} </p>
+                            </div>
+                        </div>
+                        </div><!-- /.text-block -->
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+                        <ul class="portfolio-item__meta-list list-unstyled d-flex flex-wrap mt-50">
+                        <li>
+                            <h5>Client</h5>
+                            <span> {{ details.one | safe }} </span>
+                        </li>
+                        <li>
+                            <h5>Industry</h5>
+                            <span> {{ details.two | safe }} </span>
+                        </li>
+                        <li>
+                            <h5>Services</h5>
+                            <span> {{ details.three | safe }} </span>
+                        </li>
+                        <li>
+                            <h5>Explore</h5>
+                            <span> {{ details.four | safe }} </span>
+                        </li>
+                        </ul>
+                        
+                        <div class="text__block" id="takeaways">
+                            <div class="text__block-content row">
+                                <div class="col-sm-12">
+                                <h5 class="pt-40">What you will learn</h5>
+
+                                <ul class="list-items list-items-layout2 list-unstyled para-list">
+                                    {% for a, item in items %}
+                                    <li>{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                                </div>
+                            </div>
+                    
+                    
+                    </div><!-- /.col-lg-10 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.Text Content -->
+
+        <!-- ======================
+        Work Process 
+        ========================= -->
+        <section class="work-process mt-130 mb-0 agenda" id="agenda"> 
+            <div class="timeline-bg">
+                <div class="bg-img"><img src="../assets/images/backgrounds/7.jpg" alt="background"></div>
+            </div>
+            <div class="container mob-space">
+                <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                    <div class=" heading heading-layout2 mb-100">
+                    <h2 class="heading__subtitle">Our Approach</h2>
+                    <h3 class="heading__title color-white">{{ certAbv | safe }} Course Agenda
+                    </h3>
+                    </div>
+                </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+                <div class="row">
+                <div class="col-sm-12">
+                    <div class="process-item d-flex flex-wrap">
+                    {% for b, item in domains %}
+                        <h3 class="process-item__number"> 0{{ item.order }} </h3>
+                        <div class="process-item__content d-flex flex-wrap">
+                            <h4 class="process-item__title"> {{ item.title | safe }} </h4>
+                            <div class="process-item__desc">
+                            <ul>
+                                <li class="mb-20">
+                                <h6 class="text-white mb-5"> {{ item.topic1.title }} </h6> {{ item.topic1.description }} </li>
+                                <li class="mb-20">
+                                <h6 class="text-white mb-5 "> {{ item.topic2.title }} </h6> {{ item.topic2.description }} </li>
+                            </ul>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.Work Process -->
+    </div>
+
+{% endblock content %}
