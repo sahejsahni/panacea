@@ -946,7 +946,7 @@ select {
 }
 
 .bg-heading {
-  background-color: #0b2653 !important;
+  background-color: #1f1064 !important;
 }
 
 .bg-primary {
@@ -1011,7 +1011,7 @@ select {
 }
 
 .bg-overlay-primary:before {
-  background-color:  rgba(49, 27, 146, 0.6);
+  background-image: linear-gradient( #21e6bb, #038065);
 }
 
 /*-------------------------
@@ -1099,7 +1099,7 @@ h6 {
 
 .heading-light .heading__title,
 .heading-light .heading__desc {
-  color: #ffffff;
+  color: #ffffff ;
 }
 
 .text__block-title {
@@ -3306,7 +3306,7 @@ input[type=radio] {
     padding: 0;
   }
   .is-sticky {
-    position: static;
+    position: fixed;
     animation: none;
   }
   .navbar-actions {
@@ -3355,12 +3355,12 @@ input[type=radio] {
   .header-transparent .navbar,
   .header-transparent .navbar > .container,
   .header-transparent .navbar > .container-fluid {
-    height: 80px;
+    height: 62px;
   }
   .header .navbar-brand,
   .header-transparent .navbar-brand {
     margin-left: 15px;
-    line-height: 80px;
+    line-height: 62px;
   }
   .cart-popup {
     right: 15px;
@@ -3385,6 +3385,9 @@ input[type=radio] {
   }
   .secondary-nav {
     position: static;
+  }
+  .logo {
+    height: 44px;
   }
 }
 
@@ -3678,7 +3681,7 @@ input[type=radio] {
   height: 44px;
   line-height: 42px;
   border-radius: 50%;
-  border: 2px solid #253b61;
+  border: 1px solid #ffffff;
   text-align: center;
   color: #21e6bb;
 }
@@ -6430,7 +6433,7 @@ input[type=radio] {
 
 .counters-light .counter-item .counter,
 .counters-light .counter-item .counter-item__desc {
-  color: #ffffff;
+  color: #311b92;
 }
 
 /* Mobile Phones & tablets and Small Screens */
@@ -6915,7 +6918,7 @@ input[type=radio] {
   .banner-layout2 .banner-img {
     position: relative;
     margin-left: 70px;
-    margin-top: -115px;
+    margin-top: -200px;
   }
   .banner-layout2 .banner-text {
     padding-top: 105px;
@@ -6973,6 +6976,12 @@ input[type=radio] {
   .banner-layout1 .contact-panel {
     padding: 20px;
   }
+}
+
+.about-section {
+  background-image: url(../images/backgrounds/8.jpg);
+  background-size: cover;
+  background-position: top;
 }
 
 /*-----------------------
