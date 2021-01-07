@@ -120,6 +120,9 @@ select {
   .container {
     max-width: 1200px;
   }
+  .wrapper-negative {
+    margin-top: -100px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -237,9 +240,7 @@ select {
   border-bottom: 1px solid #e7ebef !important;
 }
 
-.wrapper-negative {
-  margin-top: -100px;
-}
+
 
 /*----------------------
      Dividers 
@@ -976,6 +977,14 @@ select {
   background-size:  contain;
 }
 
+.bg-jobs {
+  background-color: #ffffff;
+  height: 360px;
+  background-image: url(../images/backgrounds/jobs-bg.jpg);
+  background-position: top right;
+  background-size: cover;
+}
+
 .background-size-auto {
   background-size: auto !important;
 }
@@ -1137,6 +1146,9 @@ h6 {
   }
   h2 {
     font-size: 22px;
+  }
+  .bg-jobs {
+  margin-top: 60px;
   }
 }
 
@@ -2734,7 +2746,7 @@ input[type=radio] {
 
 /* navbar-transparent */
 .header-transparent .navbar {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 0px solid rgba(255, 255, 255, 0.25);
   background-color: transparent;
 }
 
@@ -3360,7 +3372,7 @@ input[type=radio] {
   .header .navbar-brand,
   .header-transparent .navbar-brand {
     margin-left: 15px;
-    line-height: 62px;
+    line-height: 0px;
   }
   .cart-popup {
     right: 15px;
@@ -7025,6 +7037,10 @@ input[type=radio] {
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 0;
+}
+
+.job-item a {
+  max-height: 56px;
 }
 
 /* Mobile Phones & tablets and Small Screens */

@@ -272,3 +272,20 @@ $(function () {
         e.preventDefault();
     });
 });
+
+
+jQuery(document).ready(function($) {
+    var alterClass = function() {
+      var ww = document.body.clientWidth;
+      if (ww < 993) {
+        $('.navbar').addClass('is-sticky');
+      } else if (ww > 992) {
+        $('.test').removeClass('blue');
+      };
+    };
+    $(window).resize(function(){
+      alterClass();
+    });
+    //Fire it when the page first loads:
+    alterClass();
+  });
