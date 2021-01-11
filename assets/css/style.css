@@ -1459,18 +1459,30 @@ h6 {
     font-size: 50px;
   }
 }
-.apple-bg {
+.tech-bg {
   background-position: bottom center;
   min-height: 584px;
   background-image: linear-gradient( #ffffff, #abecde);
+}
+
+
+.tech-bg-image {
+  position: absolute;
+  background-position: bottom center;
+  min-height: 584px;
+  height: 100%;
+  width: 100%;
   background-image: url('../images/home/hero.jpg'); 
   background-size: cover;
 }
 
 @media (max-width: 992px) {
-  .apple-bg {
+  .tech-bg {
     padding-top: 50px;
     padding-bottom: 50px;
+    height: calc(100vh - 20px);
+  }
+  .tech-bg-image {
     height: calc(100vh - 20px);
   }
 }
