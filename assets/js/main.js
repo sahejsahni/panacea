@@ -31,10 +31,10 @@ $(function () {
     var $win = $(window);
 
     /*==========  Pre Loading   ==========*/
-    $win.on('load', function () {
-        $(".preloader").fadeOut(5000);
-        $(".preloader").remove();
-    });
+    // $win.on('load', function () {
+    //     $(".preloader").fadeOut(5000);
+    //     $(".preloader").remove();
+    // });
 
     /*==========   Mobile Menu   ==========*/
     var $navToggler = $('.navbar-toggler');

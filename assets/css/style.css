@@ -973,8 +973,8 @@ select {
 .bg-contact {
   background-color: #061b49;
   height: 360px;
-  background-image: url(../images/backgrounds/header-bg.svg);
-  background-size:  contain;
+  background-image: url(../images/backgrounds/contact-bg.jpg);
+  background-size:  cover;
 }
 
 .bg-jobs {
@@ -982,6 +982,14 @@ select {
   height: 360px;
   background-image: url(../images/backgrounds/jobs-bg.jpg);
   background-position: top right;
+  background-size: cover;
+}
+
+.bg-about {
+  background-color: #ffffff;
+  height: 360px;
+  background-image: url(../images/backgrounds/about-bg.jpg);
+  background-position: center right;
   background-size: cover;
 }
 
@@ -1271,7 +1279,7 @@ h6 {
   line-height: 1.5;
 }
 
-.page-title-layout5 + .pricing .pricing-wrapper {
+.pricing .pricing-wrapper {
   position: relative;
   margin-top: -200px;
   z-index: 3;
@@ -1484,6 +1492,9 @@ h6 {
   }
   .tech-bg-image {
     height: calc(100vh - 20px);
+  }
+  .pricing .pricing-wrapper {
+    margin-top: -120px;
   }
 }
 /* Mobile Phones and tablets */
@@ -3722,10 +3733,11 @@ input[type=radio] {
   color: #ffffff;
 }
 
+
 /* Scroll Top Button */
 #scrollTopBtn {
   position: fixed;
-  right: 10px;
+  right: 75px;
   bottom: 30px;
   width: 45px;
   height: 45px;
@@ -3734,7 +3746,7 @@ input[type=radio] {
   font-size: 18px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #21e6bb;
+  background-color: #311b92;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -3744,9 +3756,35 @@ input[type=radio] {
 }
 
 #scrollTopBtn.actived {
-  right: 30px;
+  right: 90px;
   opacity: 1;
 }
+
+
+/* Whatsapp Button */
+
+#whatsappBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 45px;
+  height: 45px;
+  opacity: 1;
+  z-index: 1000;
+  font-size: 26px;
+  line-height: 46px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #25D366;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#whatsappBtn:hover {
+  background-color: #128C7E;
+}
+
 
 @media (min-width: 1200px) {
   .footer .footer-widget-about p {
@@ -3789,11 +3827,13 @@ input[type=radio] {
   }
   #scrollTopBtn {
     bottom: 20px;
-    width: 30px;
-    height: 30px;
     font-size: 14px;
   }
   #scrollTopBtn.actived {
+    right: 70px;
+  }
+  #whatsappBtn {
+    bottom: 20px;
     right: 20px;
   }
 }
@@ -4288,6 +4328,14 @@ input[type=radio] {
   font-size: 12px;
   line-height: 1.7;
   font-weight: 300;
+  margin-bottom: 40;
+}
+
+
+.contact-items .feature-item .feature-item__desc {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 600;
   margin-bottom: 40;
 }
 
@@ -5278,7 +5326,7 @@ input[type=radio] {
   width: 150px;
   left: 50%;
   border-radius: 4px;
-  background-color: #21e6bb;
+  background-color: #311b92;
   transform: translateX(-50%);
   transition: all 0.5s linear;
 }
@@ -5295,7 +5343,7 @@ input[type=radio] {
 }
 
 .member .social-icons li a:hover {
-  color: #0b2653;
+  color: #21e6bb;
 }
 
 .member:hover .member__hover {
@@ -7168,6 +7216,12 @@ input[type=radio] {
   margin-bottom: 40px;
 }
 
+.services-layout2 .service-item:hover {
+  padding: 60px 40px;
+  margin-bottom: 40px;
+  background-image: linear-gradient( #21e6bb, #038065);
+  transition: all 0.3s linear;
+}
 .services-layout2 .service-item:not(.service-item-custom) {
   border: 1px solid #e6e9ed;
 }
@@ -7519,6 +7573,8 @@ input[type=radio] {
 
 .history-timeline {
   overflow-x: hidden;
+  margin-top: -400px;
+  padding-top: 280px;
 }
 
 .history-timeline + section {
