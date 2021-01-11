@@ -2657,7 +2657,7 @@ input[type=radio] {
 .navbar .nav__item .nav__item-link:before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   left: 0;
   right: 0;
   width: 0;
@@ -2766,10 +2766,10 @@ input[type=radio] {
 .header-transparent .logo-dark {
   display: none;
 }
-
+/* 
 .header-transparent .is-sticky .nav__item .nav__item-link:before {
   background-color: #0b2653;
-}
+} */
 
 .header-light .navbar {
   border-bottom: 0;
@@ -3268,7 +3268,7 @@ input[type=radio] {
     width: 100%;
     top: 100%;
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s ease-in-out;
     transform: translateY(-320px);
   }
